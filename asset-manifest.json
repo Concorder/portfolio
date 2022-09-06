@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.43f93704.css",
-    "main.js": "/portfolio/static/js/main.80887533.js",
+    "main.css": "/portfolio/static/css/main.93f2b741.css",
+    "main.js": "/portfolio/static/js/main.d7a77965.js",
     "static/js/787.34fa4a2b.chunk.js": "/portfolio/static/js/787.34fa4a2b.chunk.js",
     "static/media/oksi.jpg": "/portfolio/static/media/oksi.4f45790d43412b856799.jpg",
     "static/media/brainstove.jpg": "/portfolio/static/media/brainstove.caeeab75e76c43fac464.jpg",
     "static/media/mindsboom.jpg": "/portfolio/static/media/mindsboom.38deaff4e66522c2a9f5.jpg",
     "static/media/radinet.jpg": "/portfolio/static/media/radinet.c22783e4d0e2de855d89.jpg",
     "static/media/landing1.jpg": "/portfolio/static/media/landing1.2c32cd3f794afd0b16a7.jpg",
+    "static/media/Linkedin_logo.svg": "/portfolio/static/media/Linkedin_logo.b08ea6df1ce270bbc09b8f841d43baec.svg",
+    "static/media/Telegram_logo.svg": "/portfolio/static/media/Telegram_logo.d524ce60a5271a2d84bbeb6759286b02.svg",
     "index.html": "/portfolio/index.html",
-    "main.43f93704.css.map": "/portfolio/static/css/main.43f93704.css.map",
-    "main.80887533.js.map": "/portfolio/static/js/main.80887533.js.map",
+    "static/media/Gmail_logo.svg": "/portfolio/static/media/Gmail_logo.cf6e9da6207069eaa596237538127bcb.svg",
+    "main.93f2b741.css.map": "/portfolio/static/css/main.93f2b741.css.map",
+    "main.d7a77965.js.map": "/portfolio/static/js/main.d7a77965.js.map",
     "787.34fa4a2b.chunk.js.map": "/portfolio/static/js/787.34fa4a2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43f93704.css",
-    "static/js/main.80887533.js"
+    "static/css/main.93f2b741.css",
+    "static/js/main.d7a77965.js"
   ]
 }
