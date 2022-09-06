@@ -277,7 +277,7 @@ a:visited {
     color: transparent;
     background: linear-gradient(60deg, transparent 10%, rgba(255, 255, 255, 0.24) 13%, transparent 15%) no-repeat, black;
     background-size: 100% 100%, 0px;
-    background-position: -200px 0%, left;
+    background-position: -250px 0%, left;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: blink 1.5s;
@@ -286,10 +286,10 @@ a:visited {
 @keyframes blink {
 
     0% {
-        background-position: -80px 0%, left
+        background-position: -250px 0%, left
     }
     100% {
-        background-position: 1000px 0%, left
+        background-position: 1200px 0%, left
     }
 }
 
