@@ -48,7 +48,7 @@ function App() {
                 break;
             default:
                 document.documentElement.style.setProperty('--greyed', "#77270a");
-                setTitle("Home")
+                setTitle("Portfolio")
 
         }
     }
@@ -70,6 +70,7 @@ function App() {
                         <ul onClick={setTitleHandler} className={"navBar"}>
                             <Link to={'/'} className={`${title === "Home"? "active":""}`} >Home</Link>
                             <Link to={'/portfolio'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
+
                             <Link to={'/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
                             <Link to={'/experience'} className={`${title === "Experience"? "active":""}`}>Experience</Link>
                         </ul>
@@ -89,6 +90,7 @@ function App() {
                         <Routes>
                             <Route path={"/"} exact element={<Home/>}/>
                             <Route path={"/portfolio"} element={<Portfolio/>}/>
+                            <Route path={"/portfolio/"} element={<Portfolio/>}/>
                             <Route path={"/skills"} element={<Skills/>}/>
                             <Route path={"/experience"} element={<Experience/>}/>
                         </Routes>
