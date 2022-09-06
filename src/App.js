@@ -29,25 +29,25 @@ function App() {
     const path = useReactPath();
     const setTitleHandler = () => {
         switch (window.location.pathname) {
-            case  "/":
+            case  "/portfolio/":
                 document.documentElement.style.setProperty('--greyed', "#77270a");
                 setTitle("Home")
 
                 break;
-            case "/portfolio":
+            case "/portfolio/works":
                 document.documentElement.style.setProperty('--greyed', "#ffeb3b");
                 setTitle("Portfolio")
                 break;
-            case "/skills":
+            case "/portfolio/skills":
                 document.documentElement.style.setProperty('--greyed', "#d3eb43");
                 setTitle("Skills")
                 break;
-            case "/experience":
+            case "/portfolio/experience":
                 document.documentElement.style.setProperty('--greyed', "#ffc107");
                 setTitle("Experience")
                 break;
             default:
-                document.documentElement.style.setProperty('--greyed', "#77270a");
+                document.documentElement.style.setProperty('--greyed', "#ffeb3b");
                 setTitle("Portfolio")
 
         }
@@ -68,11 +68,11 @@ function App() {
                     <div className="mainFrame__flex-vertLeft">
                         <div className="mainFrame__vertLine"></div>
                         <ul onClick={setTitleHandler} className={"navBar"}>
-                            <Link to={'/'} className={`${title === "Home"? "active":""}`} >Home</Link>
-                            <Link to={'/portfolio'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
+                            <Link to={'/portfolio/'} className={`${title === "Home"? "active":""}`} >Home</Link>
+                            <Link to={'/portfolio/works'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
 
-                            <Link to={'/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
-                            <Link to={'/experience'} className={`${title === "Experience"? "active":""}`}>Experience</Link>
+                            <Link to={'/portfolio/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
+                            <Link to={'/portfolio/experience'} className={`${title === "Experience"? "active":""}`}>Experience</Link>
                         </ul>
                         <div className="mainFrame__vertLine"></div>
                     </div>
@@ -88,11 +88,10 @@ function App() {
 
                     <section className={`contentHolder ${title + "Grad"}`}>
                         <Routes>
-                            <Route path={"/"} exact element={<Home/>}/>
-                            <Route path={"/portfolio"} element={<Portfolio/>}/>
-                            <Route path={"/portfolio/"} element={<Portfolio/>}/>
-                            <Route path={"/skills"} element={<Skills/>}/>
-                            <Route path={"/experience"} element={<Experience/>}/>
+                            <Route path={"/portfolio/"} exact element={<Home/>}/>
+                            <Route path={"/portfolio/works"} element={<Portfolio/>}/>
+                            <Route path={"/portfolio/skills"} element={<Skills/>}/>
+                            <Route path={"/portfolio/experience"} element={<Experience/>}/>
                         </Routes>
                     </section>
                     <div className="mainFrame__horLine_bottom"></div>
