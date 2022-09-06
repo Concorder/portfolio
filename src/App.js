@@ -6,7 +6,6 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import Home from "./Home";
-
 function App() {
     const [vh, setVh] = useState(window.innerHeight * 0.01)
     let style = {"--vh": vh}
