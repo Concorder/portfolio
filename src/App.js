@@ -70,7 +70,7 @@ function App() {
                         <div className="mainFrame__vertLine"></div>
                         <ul onClick={setTitleHandler} className={"navBar"}>
                             <Link to={'/'} className={`${title === "Home"? "active":""}`} >Home</Link>
-                            <Link to={'/portfolio'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
+                            <Link to={'/Portfolio'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
                             <Link to={'/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
                             <Link to={'/experience'} className={`${title === "Experience"? "active":""}`}>Experience</Link>
                         </ul>
@@ -89,7 +89,7 @@ function App() {
                     <section className={`contentHolder ${title + "Grad"}`}>
                         <Routes>
                             <Route path={"/"} exact element={<Home/>}/>
-                            <Route path={"/portfolio"} element={<Portfolio/>}/>
+                            <Route path={"/Portfolio"} element={<Portfolio/>}/>
                             <Route path={"/skills"} element={<Skills/>}/>
                             <Route path={"/experience"} element={<Experience/>}/>
                         </Routes>
