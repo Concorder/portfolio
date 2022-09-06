@@ -1,6 +1,7 @@
 import './App.css';
 import Portfolio from "./Portfolio";
 import Experience from "./Experience";
+import Contacts from "./components/Contacts";
 import Skills from "./Skills";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import {Link} from "react-router-dom";
@@ -46,9 +47,13 @@ function App() {
                 document.documentElement.style.setProperty('--greyed', "#ffc107");
                 setTitle("Experience")
                 break;
+            case "/portfolio/contacts":
+                document.documentElement.style.setProperty('--greyed', "#8b78ff");
+                setTitle("Contacts")
+                break;
             default:
-                document.documentElement.style.setProperty('--greyed', "#ffeb3b");
-                setTitle("Portfolio")
+                document.documentElement.style.setProperty('--greyed', "#77270a");
+                setTitle("Home")
 
         }
     }
@@ -56,11 +61,21 @@ function App() {
     return (
         <div className="App">
             <Router>
+
                 <main className={"mainFrame"}>
                     <div className="mainFrame__flex-top">
                         <div className={"mainFrame__nameHolder"}>
                             <h2 className={"mainFrame__name"}>Alexander Bondarenko</h2>
                             <span className={"mainFrame__jobTitle"}>Web Developer</span>
+                            <nav className={"navBar mobile"}>
+                                <ul onClick={setTitleHandler} className={"navBar"}>
+                                    <Link to={'/portfolio/'} className={`${title === "Home"? "active":""}`} >Home</Link>
+                                    <Link to={'/portfolio/works'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
+                                    <Link to={'/portfolio/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
+                                    <Link to={'/portfolio/experience'} className={`${title === "Experience"? "active":""}`}>Experience</Link>
+                                    <Link to={'/portfolio/contacts'} className={`${title === "Contacts"? "active":""}`}>Contacts</Link>
+                                </ul>
+                            </nav>
 
                         </div>
                         <div className="mainFrame__horLine"></div>
@@ -70,9 +85,9 @@ function App() {
                         <ul onClick={setTitleHandler} className={"navBar"}>
                             <Link to={'/portfolio/'} className={`${title === "Home"? "active":""}`} >Home</Link>
                             <Link to={'/portfolio/works'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
-
                             <Link to={'/portfolio/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
                             <Link to={'/portfolio/experience'} className={`${title === "Experience"? "active":""}`}>Experience</Link>
+                            <Link to={'/portfolio/contacts'} className={`${title === "Contacts"? "active":""}`}>Contacts</Link>
                         </ul>
                         <div className="mainFrame__vertLine"></div>
                     </div>
@@ -92,6 +107,7 @@ function App() {
                             <Route path={"/portfolio/works"} element={<Portfolio/>}/>
                             <Route path={"/portfolio/skills"} element={<Skills/>}/>
                             <Route path={"/portfolio/experience"} element={<Experience/>}/>
+                            <Route path={"/portfolio/contacts"} element={<Contacts/>}/>
                         </Routes>
                     </section>
                     <div className="mainFrame__horLine_bottom"></div>

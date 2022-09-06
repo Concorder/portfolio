@@ -7,10 +7,10 @@ import brainImg from "./img/portfolio/brainstove.jpg"
 import oksiImg from "./img/portfolio/oksi.jpg"
 const works = [
     {name:"Arya Mg - Corp. Site",image: radinetImg,link:"https://concorder.github.io/Arya/"},
+    {name:"Portal (in progress)",image: oksiImg,link:"https://concorder.github.io/OKSI-games/"},
+    {name:"Gaming Portal",image: brainImg,link:"https://brainstove.com/"},
     {name:"Recipes Portal",image: mindsBoomImg,link:"https://concorder.github.io/ORB-2/"},
     {name:"iPhone Landing",image: iLandImg,link:"https://concorder.github.io/pf/iphone_pl_1.html"},
-    {name:"Gaming Portal",image: brainImg,link:"https://brainstove.com/"},
-    {name:"Portal (in progress)",image: oksiImg,link:"https://concorder.github.io/OKSI-games/"}
 
     ]
 

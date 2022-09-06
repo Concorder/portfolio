@@ -24,7 +24,10 @@ time, mark, audio, video {
 a {
     text-decoration: none;
 }
-
+.App{
+max-width: 1920px;
+    margin: auto;
+}
 .portfolio__gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,7 +44,6 @@ a {
     transform-style: preserve-3d;
     background-size: cover;
     background-position: top;
-    filter: brightness(1);
     transform: rotateX(-3deg);
     text-align: center;
     display: flex;
@@ -66,7 +68,7 @@ a {
     rotate: -90deg;
     transform-origin: left top;
     transform: rotateX(0deg);
-    text-shadow: 0px 0px 5px #00000090;
+    text-shadow: 0 0 5px #00000090;
 }
 
 .workPreview a {
@@ -143,7 +145,6 @@ body {
 }
 
 .mainFrame__jobTitle {
-    float: left;
     color: var(--greyed);
     font-weight: 700;
     text-transform: uppercase;
@@ -170,8 +171,8 @@ body {
     display: flex;
     height: 100%;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     flex-direction: column;
 }
 
@@ -231,8 +232,14 @@ body {
 }
 
 .ExperienceGrad {
-background: radial-gradient(at 40% 20%, #ffc107 0px, transparent 50%), radial-gradient(at 90% 0%, #ff8622 0px, transparent 50%), radial-gradient(at 0% 60%, #ffc107 0px, transparent 50%), radial-gradient(at 80% 50%, #ffc107 0px, transparent 50%), radial-gradient(at 0% 100%, #ffeb3b 0px, transparent 60%), radial-gradient(at 80% 100%, #ffeb3b 0px, transparent 50%), radial-gradient(at 0% 0%, #ff9800 0px, transparent 50%);
+    background: radial-gradient(at 40% 20%, #ffc107 0px, transparent 50%), radial-gradient(at 90% 0%, #ff8622 0px, transparent 50%), radial-gradient(at 0% 60%, #ffc107 0px, transparent 50%), radial-gradient(at 80% 50%, #ffc107 0px, transparent 50%), radial-gradient(at 0% 100%, #ffeb3b 0px, transparent 60%), radial-gradient(at 80% 100%, #ffeb3b 0px, transparent 50%), radial-gradient(at 0% 0%, #ff9800 0px, transparent 50%);
 
+}
+.ContactsGrad{
+    background: linear-gradient(  #673ab7,  transparent ), linear-gradient(  -45deg,  #9c27b0,  transparent ), linear-gradient(  45deg,  #3f51b5,  transparent );
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainFrame__horLine_bottom {
@@ -269,7 +276,7 @@ a:visited {
 
 /*home*/
 .home_heading {
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: 900;
     line-height: 0.8;
     margin-top: -40px;
@@ -286,10 +293,10 @@ a:visited {
 @keyframes blink {
 
     0% {
-        background-position: -250px 0%, left
+        background-position: -250px 0, left
     }
     100% {
-        background-position: 1200px 0%, left
+        background-position: 1200px 0, left
     }
 }
 
@@ -310,12 +317,14 @@ a:visited {
     color: var(--greyed);
     text-transform: uppercase;
 }
+
 .subheader-exp {
     font-size: 18px;
     color: var(--background);
     text-transform: uppercase;
 }
-.subheader-white{
+
+.subheader-white {
     font-size: 18px;
     color: #fff;
 
@@ -331,6 +340,7 @@ a:visited {
     background: linear-gradient(180deg, #00000017, transparent);
     justify-content: space-around;
 }
+
 .expContainer {
     display: flex;
     padding: 30px 15px;
@@ -341,9 +351,103 @@ a:visited {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.23), transparent);
     justify-content: space-evenly;
 }
+.mobile {
+    display: none!important;
+}
+.addressBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+}
+.contactLine {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contactLine a{
+    color: var(--text-color);
+}
+.contactLogo{
+    width: 24px;
+    height: 24px;
+}
 
+address img{
 
-.App-link {
-    color: #61dafb;
+}
+
+@media screen and (max-width: 500px) {
+    .mainFrame {
+        position: relative;
+        box-sizing: border-box;
+        width: -webkit-fill-available;
+        margin: 60px 20px 0 0;
+        min-height: calc(var(--vh) * 100 - 60px);
+    }
+    .home_heading{
+        -webkit-text-stroke: 1px var(--greyed);
+        font-size: 38px;
+        margin: 10px;
+        background: transparent;
+    }
+    .portfolio__gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 215px;
+        grid-gap: 20px;
+        max-width: 600px;
+        margin: auto;
+        perspective: 300px;
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+    .portfolio__gridContainer .workPreview{
+        filter: saturate(1);
+    }
+    .contentHolder{
+        position: relative;
+    }
+    .mainFrame__flex-vertLeft{
+        display: none;
+    }
+    .skillContainer{
+        padding: 20px 5px;
+        line-height: 1.25;
+    }
+    .skillsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    .mainFrame__flex-top .navBar a.active, .navBar a:hover {
+        font-size: 21px;
+        color: var(--greyed);
+    }
+    .mainFrame__flex-top .navBar {
+        color: var(--text-color);
+        display: flex;
+        gap: 15px;
+        text-decoration: none;
+        margin: 7px 0 30px;
+    }
+    .mainFrame__nameHolder{
+        margin: 0 0 0 10px;
+    }
+    .navBar a{
+        font-size: 14px;
+    }
+    .mainFrame__name{
+        font-size: 24px;
+    }
+    .contentHolder{
+        min-height: 80%;
+        width: 95%;
+        right: 20px;
+        left: 0;
+    }
+    .mobile{
+        display: flex!important;
+    }
+
 }
 
