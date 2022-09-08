@@ -5,7 +5,7 @@ function Expfolder({company, years, title}) {
         <div className={"expContainer"}>
 <h3 className={"subheader-exp"}>{company}</h3>
             <p className={"contText"}>{title}</p>
-            <p className={"contText"}>{years}</p>
+            <p className={"contText-years"}>{years}</p>
         </div>
     );
 }

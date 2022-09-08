@@ -5,13 +5,19 @@ import Contacts from "./components/Contacts";
 import Skills from "./Skills";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import {Link} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {useEffect, useState, useLayoutEffect} from "react";
 import Home from "./Home";
 function App() {
-    const [vh, setVh] = useState(window.innerHeight * 0.01)
-    let style = {"--vh": vh}
-    const [title, setTitle] = useState("Home")
+        useLayoutEffect(() => {
+            function setVh(){
+                document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 +"px");
+            }
+            window.addEventListener('resize', setVh);
 
+            return () => window.removeEventListener('resize', setVh);
+        }, []);
+
+    const [title, setTitle] = useState("Home")
     const useReactPath = () => {
         const [path, setPath] = useState(window.location.pathname);
         const listenToPopstate = () => {
@@ -59,7 +65,7 @@ function App() {
     }
     useEffect(setTitleHandler, [path])
     return (
-        <div className="App">
+        <div className="App" >
             <Router>
 
                 <main className={"mainFrame"}>

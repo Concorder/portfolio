@@ -32,7 +32,7 @@ max-width: 1920px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
-    grid-gap: 20px;
+    grid-gap: 30px;
     max-width: 600px;
     margin: auto;
     perspective: 300px;
@@ -128,6 +128,7 @@ body {
 
 .mainFrame__flex-top {
     display: flex;
+
     justify-content: space-between;
 }
 
@@ -304,26 +305,38 @@ a:visited {
 .skillsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
     grid-gap: 20px;
     max-width: 960px;
     margin: auto;
     padding: 30px;
     perspective: 300px;
+    height: inherit;
 }
 
 .subheader {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
     color: var(--greyed);
     text-transform: uppercase;
+
 }
 
 .subheader-exp {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
     color: var(--background);
     text-transform: uppercase;
 }
-
+.contText {
+    font-size: 16px;
+    color: #fff;
+}
+.contText-years{
+    font-size: 16px;
+    color: var(--background);
+}
 .subheader-white {
     font-size: 18px;
     color: #fff;
@@ -331,14 +344,14 @@ a:visited {
 }
 
 .skillContainer {
-    display: flex;
-    padding: 30px 15px;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     line-height: 1.5;
-    background: linear-gradient(180deg, #00000017, transparent);
-    justify-content: space-around;
+    padding: 30px 15px;
+    text-align: center;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.23), transparent);
 }
 
 .expContainer {
@@ -349,7 +362,7 @@ a:visited {
     text-align: center;
     line-height: 1.5;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.23), transparent);
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .mobile {
     display: none!important;
@@ -373,17 +386,19 @@ a:visited {
     height: 24px;
 }
 
+
 address img{
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1080px) {
     .mainFrame {
         position: relative;
         box-sizing: border-box;
         width: -webkit-fill-available;
         margin: 60px 20px 0 0;
         min-height: calc(var(--vh) * 100 - 60px);
+        height: unset;
     }
     .home_heading{
         -webkit-text-stroke: 1px var(--greyed);
@@ -395,18 +410,15 @@ address img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 215px;
-        grid-gap: 20px;
+        grid-gap: 30px;
         max-width: 600px;
         margin: auto;
         perspective: 300px;
         margin-top: -20px;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     .portfolio__gridContainer .workPreview{
         filter: saturate(1);
-    }
-    .contentHolder{
-        position: relative;
     }
     .mainFrame__flex-vertLeft{
         display: none;
@@ -416,7 +428,7 @@ address img{
         line-height: 1.25;
     }
     .skillsGrid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding: 20px;
     }
     .mainFrame__flex-top .navBar a.active, .navBar a:hover {
@@ -426,7 +438,7 @@ address img{
     .mainFrame__flex-top .navBar {
         color: var(--text-color);
         display: flex;
-        gap: 15px;
+        gap: 12px;
         text-decoration: none;
         margin: 7px 0 30px;
     }
@@ -440,8 +452,10 @@ address img{
         font-size: 24px;
     }
     .contentHolder{
-        min-height: 80%;
-        width: 95%;
+        height: fit-content;
+        position: relative;
+        min-height: calc(var(--vh) * 70);
+        width: 94%;
         right: 20px;
         left: 0;
     }
