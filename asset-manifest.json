@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a1c295e9.css",
-    "main.js": "/portfolio/static/js/main.fb8eb81d.js",
+    "main.css": "/portfolio/static/css/main.9e4b3ae5.css",
+    "main.js": "/portfolio/static/js/main.e7ef10da.js",
     "static/js/787.34fa4a2b.chunk.js": "/portfolio/static/js/787.34fa4a2b.chunk.js",
     "static/media/oksi.jpg": "/portfolio/static/media/oksi.4f45790d43412b856799.jpg",
     "static/media/brainstove.jpg": "/portfolio/static/media/brainstove.caeeab75e76c43fac464.jpg",
@@ -12,12 +12,12 @@
     "static/media/Telegram_logo.svg": "/portfolio/static/media/Telegram_logo.d524ce60a5271a2d84bbeb6759286b02.svg",
     "index.html": "/portfolio/index.html",
     "static/media/Gmail_logo.svg": "/portfolio/static/media/Gmail_logo.cf6e9da6207069eaa596237538127bcb.svg",
-    "main.a1c295e9.css.map": "/portfolio/static/css/main.a1c295e9.css.map",
-    "main.fb8eb81d.js.map": "/portfolio/static/js/main.fb8eb81d.js.map",
+    "main.9e4b3ae5.css.map": "/portfolio/static/css/main.9e4b3ae5.css.map",
+    "main.e7ef10da.js.map": "/portfolio/static/js/main.e7ef10da.js.map",
     "787.34fa4a2b.chunk.js.map": "/portfolio/static/js/787.34fa4a2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1c295e9.css",
-    "static/js/main.fb8eb81d.js"
+    "static/css/main.9e4b3ae5.css",
+    "static/js/main.e7ef10da.js"
   ]
 }
