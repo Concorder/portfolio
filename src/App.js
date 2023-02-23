@@ -8,10 +8,12 @@ import {Link} from "react-router-dom";
 import {useEffect, useState, useLayoutEffect} from "react";
 import Home from "./Home";
 function App() {
+    function setVh(){
+        document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 +"px");
+    }
+    setVh();
         useLayoutEffect(() => {
-            function setVh(){
-                document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 +"px");
-            }
+
             window.addEventListener('resize', setVh);
 
             return () => window.removeEventListener('resize', setVh);
@@ -37,7 +39,7 @@ function App() {
     const setTitleHandler = () => {
         switch (window.location.pathname) {
             case  "/portfolio/":
-                document.documentElement.style.setProperty('--greyed', "#77270a");
+                document.documentElement.style.setProperty('--greyed', "#ef4406");
                 setTitle("Home")
 
                 break;
@@ -58,7 +60,7 @@ function App() {
                 setTitle("Contacts")
                 break;
             default:
-                document.documentElement.style.setProperty('--greyed', "#77270a");
+                document.documentElement.style.setProperty('--greyed', "#ef4406");
                 setTitle("Home")
 
         }

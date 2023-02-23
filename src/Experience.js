@@ -7,10 +7,13 @@ const experience = [
     {company:"Mayzus Investment Ltd.", years:"2012-2014",response:"Graphic Designer"}
 ]
 function Experience(props) {
+    let i = 0
     return (
             <div className={"skillsGrid"}>
                 {experience.map(work=>{
-                    return <Expfolder company={work.company} years={work.years} title={work.response} key={work.company + work.years}/>
+                    i++
+                    return <Expfolder order={i} company={work.company} years={work.years} title={work.response} key={work.company + work.years}/>
+
                 })}
             </div>
     );

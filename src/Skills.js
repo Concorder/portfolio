@@ -11,13 +11,13 @@ const skills = [
 ]
 
 function Skills() {
+    let i = 0;
     return (
         <div className={"skillsGrid"}>
-            {skills.map(skill=>{
-                return <SkillHolder skill={skill.skill} experience={skill.exp} key={skill.skill}/>
+            {skills.map(skill=>{i++;
+                return <SkillHolder order={i} skill={skill.skill} experience={skill.exp} key={skill.skill}/>
             })}
         </div>
     );
 }
-
 export default Skills;

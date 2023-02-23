@@ -52,11 +52,16 @@ max-width: 1920px;
     justify-content: flex-end;
     box-shadow: 1px 10px 10px -4px #0000004a;
     filter: saturate(0);
+
+    opacity: 1;
+    animation-fill-mode: forwards;
 }
 
 .workPreview:hover {
     animation: hoverWork 3s infinite alternate;
     filter: saturate(1);
+    opacity: 1;
+    transition: 0s;
 }
 
 .workPreview::after {
@@ -92,10 +97,10 @@ max-width: 1920px;
 
 @keyframes hoverWork {
     0% {
-        background-position: top left
+        background-position: top left;
     }
     100% {
-        background-position: bottom right
+        background-position: bottom right;
     }
 }
 
@@ -150,6 +155,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 24px;
+    transition: color 1s;
 }
 
 .mainFrame__flex-top .navBar {
@@ -181,6 +187,7 @@ body {
     width: 1px;
     background: var(--greyed);
     height: inherit;
+    transition: background-color 1s;
 
 }
 
@@ -188,6 +195,7 @@ body {
     width: -webkit-fill-available;
     height: 1px;
     background: var(--greyed);
+    transition: background-color 1s;
 }
 
 .mainFrame__title {
@@ -199,6 +207,7 @@ body {
     line-height: 0;
     margin: 30px 0;
     color: var(--greyed);
+    transition: color 1s;
 }
 
 .mainFrame__flex-vertLeft .navBar {
@@ -206,15 +215,16 @@ body {
     flex-direction: column;
     gap: 20px;
     margin: 30px 0;
+    transition: background-color 1s;
 }
 
 .contentHolder {
-    height: 80%;
-    width: 80%;
+    height: 89%;
+    width: 85%;
     background: #161616;
     bottom: 0;
     position: absolute;
-    right: 120px;
+    right: 85px;
     transition: 1s;
     display: flex;
 }
@@ -258,15 +268,44 @@ body {
     height: 18px;
 }
 
-.navBar a.active, .navBar a:hover {
+.navBar a.active, .navBar a.active:hover  {
     font-size: 21px;
+    color: var(--text-color);
+}
+.navBar a:hover {
+    font-size: 16px;
     color: var(--text-color);
 }
 
 a {
     color: var(--greyed);
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 75%;
+    margin: 0 auto;
+    width: 85%;
+    gap: 15px;
+}
 
+
+.grid-item {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.grid-item video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
 a:visited {
     color: var(--greyed);
 }
@@ -274,21 +313,32 @@ a:visited {
 .mainFrame__flex-top .navBar a:visited {
     color: var(--text-color);
 }
-
+.slider_grid{
+    display: grid;
+}
 /*home*/
 .home_heading {
-    font-size: 6vw;
-    font-weight: 900;
-    line-height: 0.8;
-    margin-top: -40px;
-    margin-left: -40px;
-    color: transparent;
-    background: linear-gradient(60deg, transparent 10%, rgba(255, 255, 255, 0.24) 13%, transparent 15%) no-repeat, black;
-    background-size: 100% 100%, 0px;
-    background-position: -250px 0%, left;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: blink 1.5s;
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: var(--text-color);
+
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+div[class^='slide_'] {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes blink {
@@ -351,7 +401,15 @@ a:visited {
     padding: 30px 15px;
     text-align: center;
     justify-content: flex-start;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.23), transparent);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), transparent);
+    animation: transit 1s linear;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transit {
+    0%{opacity: 0}
+    100%{opacity: 1}
 }
 
 .expContainer {
@@ -361,8 +419,11 @@ a:visited {
     align-items: center;
     text-align: center;
     line-height: 1.5;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.23), transparent);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), transparent);
     justify-content: flex-start;
+    animation: transit 1s linear;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 .mobile {
     display: none!important;
@@ -405,6 +466,7 @@ address img{
         font-size: 38px;
         margin: 10px;
         background: transparent;
+
     }
     .portfolio__gridContainer {
         display: grid;
@@ -432,7 +494,7 @@ address img{
         padding: 20px;
     }
     .mainFrame__flex-top .navBar a.active, .navBar a:hover {
-        font-size: 21px;
+
         color: var(--greyed);
     }
     .mainFrame__flex-top .navBar {
