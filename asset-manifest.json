@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.870c78bb.css",
+    "main.css": "/portfolio/static/css/main.74d0acd1.css",
     "main.js": "/portfolio/static/js/main.0e4d9b16.js",
     "static/js/787.34fa4a2b.chunk.js": "/portfolio/static/js/787.34fa4a2b.chunk.js",
     "static/media/design.mp4": "/portfolio/static/media/design.b42007e62dda0ce71de2.mp4",
@@ -20,12 +20,12 @@
     "static/media/Telegram_logo.svg": "/portfolio/static/media/Telegram_logo.d524ce60a5271a2d84bbeb6759286b02.svg",
     "index.html": "/portfolio/index.html",
     "static/media/Gmail_logo.svg": "/portfolio/static/media/Gmail_logo.cf6e9da6207069eaa596237538127bcb.svg",
-    "main.870c78bb.css.map": "/portfolio/static/css/main.870c78bb.css.map",
+    "main.74d0acd1.css.map": "/portfolio/static/css/main.74d0acd1.css.map",
     "main.0e4d9b16.js.map": "/portfolio/static/js/main.0e4d9b16.js.map",
     "787.34fa4a2b.chunk.js.map": "/portfolio/static/js/787.34fa4a2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.870c78bb.css",
+    "static/css/main.74d0acd1.css",
     "static/js/main.0e4d9b16.js"
   ]
 }
