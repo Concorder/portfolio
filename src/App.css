@@ -24,10 +24,12 @@ time, mark, audio, video {
 a {
     text-decoration: none;
 }
-.App{
-max-width: 1920px;
+
+.App {
+    max-width: 1920px;
     margin: auto;
 }
+
 .portfolio__gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,6 +39,7 @@ max-width: 1920px;
     margin: auto;
     perspective: 300px;
     margin-top: -20px;
+    animation: transit 1s linear;
 }
 
 .workPreview {
@@ -52,9 +55,6 @@ max-width: 1920px;
     justify-content: flex-end;
     box-shadow: 1px 10px 10px -4px #0000004a;
     filter: saturate(0);
-
-    opacity: 1;
-    animation-fill-mode: forwards;
 }
 
 .workPreview:hover {
@@ -227,6 +227,7 @@ body {
     right: 85px;
     transition: 1s;
     display: flex;
+    align-items: center;
 }
 
 .HomeGrad {
@@ -246,8 +247,9 @@ body {
     background: radial-gradient(at 40% 20%, #ffc107 0px, transparent 50%), radial-gradient(at 90% 0%, #ff8622 0px, transparent 50%), radial-gradient(at 0% 60%, #ffc107 0px, transparent 50%), radial-gradient(at 80% 50%, #ffc107 0px, transparent 50%), radial-gradient(at 0% 100%, #ffeb3b 0px, transparent 60%), radial-gradient(at 80% 100%, #ffeb3b 0px, transparent 50%), radial-gradient(at 0% 0%, #ff9800 0px, transparent 50%);
 
 }
-.ContactsGrad{
-    background: linear-gradient(  #673ab7,  transparent ), linear-gradient(  -45deg,  #9c27b0,  transparent ), linear-gradient(  45deg,  #3f51b5,  transparent );
+
+.ContactsGrad {
+    background: linear-gradient(#673ab7, transparent), linear-gradient(-45deg, #9c27b0, transparent), linear-gradient(45deg, #3f51b5, transparent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,10 +270,11 @@ body {
     height: 18px;
 }
 
-.navBar a.active, .navBar a.active:hover  {
+.navBar a.active, .navBar a.active:hover {
     font-size: 21px;
     color: var(--text-color);
 }
+
 .navBar a:hover {
     font-size: 16px;
     color: var(--text-color);
@@ -280,18 +283,19 @@ body {
 a {
     color: var(--greyed);
 }
-.grid-container {
+
+.skills__gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 75%;
     margin: 0 auto;
     width: 85%;
-    gap: 15px;
+    gap: 35px;
 }
 
-
-.grid-item {
+.skills__gridItem {
     text-align: center;
     padding: 10px;
     display: flex;
@@ -299,13 +303,136 @@ a {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    flex-direction: column;
+
 }
-.grid-item video{
+
+.skills__gridItem:nth-child(1) {
+
+    animation: fadeInLeft 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+
+.skills__gridItem:nth-child(4) {
+    animation: fadeInRight 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+
+}
+
+.skills__gridItem:nth-child(5) {
+    animation: fadeInLeft 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+
+}
+
+.skills__gridItem:nth-child(2) {
+    animation: transit 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+.skills__gridItem:nth-child(3) {
+    animation: transit 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.1s;
+
+
+}
+
+.skills__gridItem:nth-child(6) {
+
+    animation: transit 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+}
+
+.skills__gridItem video {
+    width: calc(100% + 20px);
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-30%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate(30%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0);
+    }
+}
+
+/*.skills__gridItem:Has(video)::before {*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-image: linear-gradient(to bottom right, black, black 50%, transparent 50%);*/
+/*    background-size: 2px 2px;*/
+/*    z-index: 0;*/
+/*    display: inline-block;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+
+/*}*/
+.slider__subheader {
+    color: var(--greyed);
+    font-size: 18px;
+}
+
+.underConstruction::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, transparent, transparent 50%, black 50%);
+    background-size: 2px 2px;
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.underConstruction video {
+    height: auto;
+    width: auto !important;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.hugeHeading {
+    z-index: 20;
+    position: absolute;
+    font-size: 68px;
+    font-weight: 700;
+    top: 30px;
+    left: 30px;
+}
+
+.grid-item video {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
 }
+
 a:visited {
     color: var(--greyed);
 }
@@ -313,11 +440,13 @@ a:visited {
 .mainFrame__flex-top .navBar a:visited {
     color: var(--text-color);
 }
-.slider_grid{
+
+.slider_grid {
     display: grid;
 }
+
 /*home*/
-.home_heading {
+.skill_heading {
     font-size: 5vw;
     font-weight: 700;
     line-height: 1.3;
@@ -325,6 +454,7 @@ a:visited {
     color: var(--text-color);
 
 }
+
 .slider {
     position: relative;
     width: 100%;
@@ -332,6 +462,7 @@ a:visited {
     display: block;
     overflow: hidden;
 }
+
 div[class^='slide_'] {
     width: 100%;
     height: inherit;
@@ -379,37 +510,31 @@ div[class^='slide_'] {
     color: var(--background);
     text-transform: uppercase;
 }
+
 .contText {
     font-size: 16px;
     color: #fff;
 }
-.contText-years{
+
+.contText-years {
     font-size: 16px;
     color: var(--background);
 }
+
 .subheader-white {
     font-size: 18px;
     color: #fff;
 
 }
 
-.skillContainer {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-    padding: 30px 15px;
-    text-align: center;
-    justify-content: flex-start;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), transparent);
-    animation: transit 1s linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
 
 @keyframes transit {
-    0%{opacity: 0}
-    100%{opacity: 1}
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 .expContainer {
@@ -425,32 +550,156 @@ div[class^='slide_'] {
     opacity: 0;
     animation-fill-mode: forwards;
 }
+
 .mobile {
-    display: none!important;
+    display: none !important;
 }
+
 .addressBox {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin: auto;
 }
+
 .contactLine {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.contactLine a{
+
+.contactLine a {
     color: var(--text-color);
 }
-.contactLogo{
+
+.contactLogo {
     width: 24px;
     height: 24px;
 }
 
 
-address img{
+address img {
 
 }
+
+.slideContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    position: relative;
+}
+
+.fixedSlide {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    flex-direction: row-reverse;
+}
+
+.slide {
+    /*flex-shrink: 0;*/
+    height: 100%;
+    min-width: 100%;
+    transition: 0.6s ease-out;
+    opacity: 0;
+    padding-top: 10%;
+
+}
+
+.slide.active {
+    transform: translateX(0);
+    opacity: 1;
+    height: 100%;
+
+}
+
+.active img.slider_Image {
+    height: 80%;
+    transition: height 1.5s ease-in-out;
+}
+
+img.slider_Image {
+    bottom: 0;
+    position: fixed;
+    right: 20%;
+    height: 50%;
+    transition: 0.6s;
+}
+
+.slider__header {
+    position: relative;
+    font-weight: 700;
+    font-size: 68px;
+    margin: 40px;
+    text-transform: uppercase;
+    z-index: 20;
+
+}
+
+.slider__note {
+    width: 30%;
+    line-height: 1.5;
+    margin: 20px 60px;
+    color: var(--greyed);
+}
+
+.slider_button {
+    border-color: var(--greyed);
+    background: #00000000;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 21px;
+    height: 45px;
+    margin: 0 30px;
+    opacity: .3;
+    width: 45px;
+    color: var(--greyed);
+}
+
+.slider__decoration {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    animation: decorFloat 30s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes decorFloat {
+
+    50% {
+        transform: rotate(180deg) translate(100px, 100px)
+    }
+    100% {
+        transform: rotate(360deg) translate(0, 0)
+    }
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
 
 @media screen and (max-width: 1080px) {
     .mainFrame {
@@ -461,13 +710,37 @@ address img{
         min-height: calc(var(--vh) * 100 - 60px);
         height: unset;
     }
-    .home_heading{
+
+    .fixedSlide .slide img {
+        opacity: 0.2;
+        display: block;
+    }
+
+    .slider {
+        z-index: 2
+    }
+
+
+    .skills__gridContainer {
+        gap: 0
+    }
+
+    .slider__header {
+        font-size: 44px;
+    }
+
+    .slider__subheader {
+        font-size: 16px
+    }
+
+    .home_heading {
         -webkit-text-stroke: 1px var(--greyed);
         font-size: 38px;
         margin: 10px;
         background: transparent;
 
     }
+
     .portfolio__gridContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -479,24 +752,34 @@ address img{
         margin-top: -20px;
         margin-left: 30px;
     }
-    .portfolio__gridContainer .workPreview{
+
+    .portfolio__gridContainer .workPreview {
         filter: saturate(1);
     }
-    .mainFrame__flex-vertLeft{
+
+    .mainFrame__flex-vertLeft {
         display: none;
     }
-    .skillContainer{
+
+    .skillContainer {
         padding: 20px 5px;
         line-height: 1.25;
     }
+
+    .slider__decoration {
+        display: none
+    }
+
     .skillsGrid {
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
     }
+
     .mainFrame__flex-top .navBar a.active, .navBar a:hover {
 
         color: var(--greyed);
     }
+
     .mainFrame__flex-top .navBar {
         color: var(--text-color);
         display: flex;
@@ -504,16 +787,20 @@ address img{
         text-decoration: none;
         margin: 7px 0 30px;
     }
-    .mainFrame__nameHolder{
+
+    .mainFrame__nameHolder {
         margin: 0 0 0 10px;
     }
-    .navBar a{
+
+    .navBar a {
         font-size: 14px;
     }
-    .mainFrame__name{
+
+    .mainFrame__name {
         font-size: 24px;
     }
-    .contentHolder{
+
+    .contentHolder {
         height: fit-content;
         position: relative;
         min-height: calc(var(--vh) * 70);
@@ -521,8 +808,9 @@ address img{
         right: 20px;
         left: 0;
     }
-    .mobile{
-        display: flex!important;
+
+    .mobile {
+        display: flex !important;
     }
 
 }

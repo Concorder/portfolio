@@ -1,23 +1,40 @@
 import React from 'react';
-import SkillHolder from "./components/SkillHolder";
 
-const skills = [
-    {skill:"Adobe Photoshop", exp: "Graphic designer since 2012."},
-    {skill:"Adobe Illustrator", exp: "> 7yrs. Used for presentations, custom icons, logos, svg objects."},
-    {skill:"Figma", exp: "Basic. Enough to work as web developer."},
-    {skill:"HTML/CSS", exp: "3 years experience of landing pages and corporate site creation"},
-    {skill:"JavaScript", exp: "Adding interactivity and work with libraries such as Three.js, GSAP, Particles.js etc."},
-    {skill:"React", exp: "Basic, self learning. No commercial experience"}
-]
+import VideoBackground from "./components/Videobackground";
+import prototype from "./img/prototype.mp4";
+import design from "./img/design.mp4";
+import development from "./img/development.mp4";
+
 
 function Skills() {
-    let i = 0;
+
     return (
-        <div className={"skillsGrid"}>
-            {skills.map(skill=>{i++;
-                return <SkillHolder order={i} skill={skill.skill} experience={skill.exp} key={skill.skill}/>
-            })}
+
+
+        <div className="skills__gridContainer">
+            <div className={"skills__gridItem"}>
+                <h2 className={"skill_heading"}>Prototype</h2>
+                <span className={"slider__subheader"}>Adobe XD | Figma</span>
+            </div>
+            <div className={"skills__gridItem"}>
+                <VideoBackground videoPath={prototype}/>
+
+            </div>
+            <div className={"skills__gridItem"}>
+                <VideoBackground videoPath={design}/>
+            </div>
+            <div className={"skills__gridItem"}><h2 className={"skill_heading"}>Design</h2><span
+                className={"slider__subheader"}>Photoshop | Illustrator</span></div>
+            <div className={"skills__gridItem"}><h2 className={"skill_heading"}>Develop</h2>
+                <span className={"slider__subheader"}>JavaScript | React | Sass | GSAP | Three.js</span>
+            </div>
+            <div className={"skills__gridItem"}>
+                <VideoBackground videoPath={development}/>
+            </div>
         </div>
+
+
     );
 }
+
 export default Skills;

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="11d4801f-67e6-465c-8905-d1a388376c32" name="Changes" comment="Behance and Slider tweaks">
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_react/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_react/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_react/src/Portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_react/src/Skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/components/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_react/src/components/Contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/components/Slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/components/Videobackground.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/Behance_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/Gmail_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_react/src/img/Gmail_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/design.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/development.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/portfolio/iPhone3d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/prototype.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/robot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/robot4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/robot5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/robot6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/triangle-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/triangle-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/triangle-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_react/src/img/triangle-4.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/portfolio_react" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EO1z45hG1YUSTnlh2Im0tI81pK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/[Work]/portfolio_one/portfolio_react&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\[Work]\portfolio_one\src\components" />
+      <recent name="D:\[Work]\portfolio_one\src\img" />
+      <recent name="D:\[Work]\portfolio_one\public\vid" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="$PROJECT_DIR$/../../programs/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="$PROJECT_DIR$/../../programs/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="$PROJECT_DIR$/../../programs/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.deploy" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11d4801f-67e6-465c-8905-d1a388376c32" name="Changes" comment="" />
+      <created>1662452080023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662452080023</updated>
+      <workItem from="1662452081855" duration="16950000" />
+      <workItem from="1662631203636" duration="11507000" />
+      <workItem from="1662658342824" duration="1864000" />
+      <workItem from="1667286396789" duration="6319000" />
+      <workItem from="1668000280001" duration="633000" />
+      <workItem from="1668451682135" duration="1559000" />
+      <workItem from="1668538410274" duration="754000" />
+      <workItem from="1674801847609" duration="55000" />
+      <workItem from="1674801929477" duration="1914000" />
+      <workItem from="1675440002073" duration="392000" />
+      <workItem from="1676995176856" duration="4640000" />
+      <workItem from="1677064913157" duration="22771000" />
+      <workItem from="1677152740321" duration="11782000" />
+      <workItem from="1677168896378" duration="4376000" />
+      <workItem from="1677189346272" duration="1643000" />
+      <workItem from="1677249712746" duration="789000" />
+      <workItem from="1677251741776" duration="8366000" />
+      <workItem from="1677330931314" duration="17239000" />
+      <workItem from="1677831181050" duration="933000" />
+      <workItem from="1677914084081" duration="595000" />
+      <workItem from="1678247741508" duration="14065000" />
+      <workItem from="1678609180923" duration="2970000" />
+      <workItem from="1678707626787" duration="810000" />
+      <workItem from="1678714881989" duration="5809000" />
+      <workItem from="1679488887296" duration="163000" />
+      <workItem from="1680516956116" duration="4862000" />
+      <workItem from="1680529936468" duration="171000" />
+      <workItem from="1686555832371" duration="10753000" />
+      <workItem from="1686569614780" duration="1036000" />
+    </task>
+    <task id="LOCAL-00001" summary="COntacts and mobile version">
+      <created>1662475278403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662475278403</updated>
+    </task>
+    <task id="LOCAL-00002" summary="COntacts and mobile version">
+      <created>1677112182078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677112182079</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="COntacts and mobile version" />
+    <MESSAGE value="Behance and Slider tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Behance and Slider tweaks" />
+  </component>
+</project>

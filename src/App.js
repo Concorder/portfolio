@@ -18,54 +18,45 @@ function App() {
 
             return () => window.removeEventListener('resize', setVh);
         }, []);
-
+    const [frameColor, setFrameColor] = useState("#b666cb")
+    document.documentElement.style.setProperty('--greyed', frameColor)
     const [title, setTitle] = useState("Home")
-    const useReactPath = () => {
-        const [path, setPath] = useState(window.location.pathname);
-        const listenToPopstate = () => {
-            const winPath = window.location.pathname;
-            setPath(winPath);
-        };
-        useEffect(() => {
-            window.addEventListener("popstate", listenToPopstate);
-
-            return () => {
-                window.removeEventListener("popstate", listenToPopstate);
-            };
-        }, []);
-        return path;
-    };
-    const path = useReactPath();
-    const setTitleHandler = () => {
+    const setTitleAndFrameColor = () => {
         switch (window.location.pathname) {
             case  "/portfolio/":
-                document.documentElement.style.setProperty('--greyed', "#ef4406");
+                setFrameColor("#b666cb");
                 setTitle("Home")
-
                 break;
             case "/portfolio/works":
-                document.documentElement.style.setProperty('--greyed', "#ffeb3b");
+                setFrameColor("#ffeb3b");
                 setTitle("Portfolio")
                 break;
             case "/portfolio/skills":
-                document.documentElement.style.setProperty('--greyed', "#d3eb43");
+                setFrameColor("#d3eb43");
                 setTitle("Skills")
                 break;
             case "/portfolio/experience":
-                document.documentElement.style.setProperty('--greyed', "#ffc107");
+                setFrameColor("#ffc107");
                 setTitle("Experience")
                 break;
             case "/portfolio/contacts":
-                document.documentElement.style.setProperty('--greyed', "#8b78ff");
+                setFrameColor("#8b78ff");
                 setTitle("Contacts")
                 break;
             default:
-                document.documentElement.style.setProperty('--greyed', "#ef4406");
+                setFrameColor("#b666cb");
                 setTitle("Home")
 
         }
     }
-    useEffect(setTitleHandler, [path])
+    useEffect(() => {
+        window.addEventListener("popstate", setTitleAndFrameColor);
+        return () => {
+            window.removeEventListener("popstate", setTitleAndFrameColor);
+        };
+    }, [title, frameColor]);
+
+
     return (
         <div className="App" >
             <Router>
@@ -75,8 +66,9 @@ function App() {
                         <div className={"mainFrame__nameHolder"}>
                             <h2 className={"mainFrame__name"}>Alexander Bondarenko</h2>
                             <span className={"mainFrame__jobTitle"}>Web Developer</span>
+                            <h2></h2>
                             <nav className={"navBar mobile"}>
-                                <ul onClick={setTitleHandler} className={"navBar"}>
+                                <ul onClick={setTitleAndFrameColor} className={"navBar"}>
                                     <Link to={'/portfolio/'} className={`${title === "Home"? "active":""}`} >Home</Link>
                                     <Link to={'/portfolio/works'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
                                     <Link to={'/portfolio/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
@@ -90,7 +82,7 @@ function App() {
                     </div>
                     <div className="mainFrame__flex-vertLeft">
                         <div className="mainFrame__vertLine"></div>
-                        <ul onClick={setTitleHandler} className={"navBar"}>
+                        <ul onClick={setTitleAndFrameColor} className={"navBar"}>
                             <Link to={'/portfolio/'} className={`${title === "Home"? "active":""}`} >Home</Link>
                             <Link to={'/portfolio/works'} className={`${title === "Portfolio"? "active":""}`}>Portfolio</Link>
                             <Link to={'/portfolio/skills'} className={`${title === "Skills"? "active":""}`}>Skills</Link>
