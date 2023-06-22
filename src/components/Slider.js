@@ -12,7 +12,7 @@ const slides = [
     {
         id: 1,
         content: ["Prototype", "Design", "Front-end"],
-        note: [""],
+        note: [],
         image: robot2,
         decoration: triangle1,
         color: "#b666cb"
@@ -80,7 +80,7 @@ useEffect(()=>{
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                 >
                     {slide.content.map((item, itemIndex) => (
-                        <h2 key={itemIndex} className="slider__header">
+                        <h2 data-text={item} key={itemIndex} className="slider__header glitch">
                             {item}
                         </h2>
                     ))}

@@ -64,8 +64,8 @@ function App() {
                 <main className={"mainFrame"}>
                     <div className="mainFrame__flex-top">
                         <div className={"mainFrame__nameHolder"}>
-                            <h2 className={"mainFrame__name"}>Alexander Bondarenko</h2>
-                            <span className={"mainFrame__jobTitle"}>Web Developer</span>
+                            <h2 className={"mainFrame__name"}>Olexandr Bondarenko</h2>
+                            <span className={"mainFrame__jobTitle"}>Designer | Web Developer</span>
                             <h2></h2>
                             <nav className={"navBar mobile"}>
                                 <ul onClick={setTitleAndFrameColor} className={"navBar"}>

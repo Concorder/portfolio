@@ -25,7 +25,7 @@ function Skills() {
             </div>
             <div className={"skills__gridItem"}><h2 className={"skill_heading"}>Design</h2><span
                 className={"slider__subheader"}>Photoshop | Illustrator</span></div>
-            <div className={"skills__gridItem"}><h2 className={"skill_heading"}>Develop</h2>
+            <div className={"skills__gridItem"}><h2 className={"skill_heading"}>Front-End</h2>
                 <span className={"slider__subheader"}>JavaScript | React | Sass | GSAP | Three.js</span>
             </div>
             <div className={"skills__gridItem"}>
