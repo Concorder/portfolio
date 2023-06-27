@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.89b57af7.css",
-    "main.js": "/portfolio/static/js/main.33e6d006.js",
+    "main.css": "/portfolio/static/css/main.3e5d7da5.css",
+    "main.js": "/portfolio/static/js/main.8cc31102.js",
     "static/js/787.34fa4a2b.chunk.js": "/portfolio/static/js/787.34fa4a2b.chunk.js",
     "static/media/design.mp4": "/portfolio/static/media/design.b42007e62dda0ce71de2.mp4",
     "static/media/development.mp4": "/portfolio/static/media/development.61a8592849c16bd214ee.mp4",
     "static/media/prototype.mp4": "/portfolio/static/media/prototype.42906078f5eeac0d9727.mp4",
+    "static/media/cromatic.jpg": "/portfolio/static/media/cromatic.47b278ea02fa300595f8.jpg",
     "static/media/robot4.png": "/portfolio/static/media/robot4.d01e48446d3a4b3ff886.png",
     "static/media/robot5.png": "/portfolio/static/media/robot5.70e9e55389d6e2f0513e.png",
     "static/media/robot6.png": "/portfolio/static/media/robot6.2e71f033a1945f949aff.png",
@@ -21,12 +22,12 @@
     "static/media/Telegram_logo.svg": "/portfolio/static/media/Telegram_logo.d524ce60a5271a2d84bbeb6759286b02.svg",
     "index.html": "/portfolio/index.html",
     "static/media/Gmail_logo.svg": "/portfolio/static/media/Gmail_logo.cf6e9da6207069eaa596237538127bcb.svg",
-    "main.89b57af7.css.map": "/portfolio/static/css/main.89b57af7.css.map",
-    "main.33e6d006.js.map": "/portfolio/static/js/main.33e6d006.js.map",
+    "main.3e5d7da5.css.map": "/portfolio/static/css/main.3e5d7da5.css.map",
+    "main.8cc31102.js.map": "/portfolio/static/js/main.8cc31102.js.map",
     "787.34fa4a2b.chunk.js.map": "/portfolio/static/js/787.34fa4a2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89b57af7.css",
-    "static/js/main.33e6d006.js"
+    "static/css/main.3e5d7da5.css",
+    "static/js/main.8cc31102.js"
   ]
 }
