@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3bae0c82.css",
-    "main.js": "/portfolio/static/js/main.f3e5a5e1.js",
+    "main.js": "/portfolio/static/js/main.38c3ec10.js",
     "static/js/787.34fa4a2b.chunk.js": "/portfolio/static/js/787.34fa4a2b.chunk.js",
     "static/media/design.mp4": "/portfolio/static/media/design.b42007e62dda0ce71de2.mp4",
     "static/media/development.mp4": "/portfolio/static/media/development.61a8592849c16bd214ee.mp4",
     "static/media/prototype.mp4": "/portfolio/static/media/prototype.42906078f5eeac0d9727.mp4",
+    "static/media/retroforex.png": "/portfolio/static/media/retroforex.af1e75897db4196c1337.png",
     "static/media/cromatic.jpg": "/portfolio/static/media/cromatic.47b278ea02fa300595f8.jpg",
     "static/media/robot4.png": "/portfolio/static/media/robot4.d01e48446d3a4b3ff886.png",
     "static/media/robot5.png": "/portfolio/static/media/robot5.70e9e55389d6e2f0513e.png",
     "static/media/robot6.png": "/portfolio/static/media/robot6.2e71f033a1945f949aff.png",
-    "static/media/oksi.jpg": "/portfolio/static/media/oksi.4f45790d43412b856799.jpg",
     "static/media/robot2.png": "/portfolio/static/media/robot2.8407af9e28701b55d368.png",
     "static/media/brainstove.jpg": "/portfolio/static/media/brainstove.caeeab75e76c43fac464.jpg",
     "static/media/iPhone3d.jpg": "/portfolio/static/media/iPhone3d.a676d6cba5956b73e3dc.jpg",
@@ -23,11 +23,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/Gmail_logo.svg": "/portfolio/static/media/Gmail_logo.cf6e9da6207069eaa596237538127bcb.svg",
     "main.3bae0c82.css.map": "/portfolio/static/css/main.3bae0c82.css.map",
-    "main.f3e5a5e1.js.map": "/portfolio/static/js/main.f3e5a5e1.js.map",
+    "main.38c3ec10.js.map": "/portfolio/static/js/main.38c3ec10.js.map",
     "787.34fa4a2b.chunk.js.map": "/portfolio/static/js/787.34fa4a2b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bae0c82.css",
-    "static/js/main.f3e5a5e1.js"
+    "static/js/main.38c3ec10.js"
   ]
 }
