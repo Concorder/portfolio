@@ -112,10 +112,9 @@ h2{
     text-shadow: -1px 0 #00ffd8;
     top: 0;
     color: white;
-    background: var(--greyed);
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
-    animation: noise-anim 5s infinite linear alternate-reverse;
+    animation: noise-anim 12s infinite linear alternate-reverse;
 }
 
 @keyframes noise-anim-2 {
@@ -193,7 +192,7 @@ h2{
     background: transparent;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+    animation: noise-anim-2 8s infinite linear alternate-reverse;
 }
 
 
