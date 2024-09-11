@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11d4801f-67e6-465c-8905-d1a388376c32" name="Changes" comment="Behance and Slider tweaks">
-      <change afterPath="$PROJECT_DIR$/src/img/dots.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/plane1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/plane2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/portfolio/retroforex.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Playground.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ThreeScene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/cromatic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/design.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/design.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/development.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/development.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/prototype.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/prototype.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +40,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/[Work]/portfolio_one&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "18.16.0",
+    "javascript.nodejs.core.library.typings.version": "18.16.0",
+    "last_opened_file_path": "D:/[Work]/smooth_site",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\[Work]\portfolio_one\src\img" />
@@ -71,7 +68,7 @@
       <recent name="D:\[Work]\portfolio_one\public\vid" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -151,7 +148,15 @@
       <workItem from="1690186176076" duration="4781000" />
       <workItem from="1690287432907" duration="37000" />
       <workItem from="1698246556019" duration="614000" />
-      <workItem from="1698289801078" duration="376000" />
+      <workItem from="1698289801078" duration="7336000" />
+      <workItem from="1698415177388" duration="594000" />
+      <workItem from="1698448472326" duration="46000" />
+      <workItem from="1698508348980" duration="10422000" />
+      <workItem from="1698576990653" duration="17315000" />
+      <workItem from="1698660393644" duration="47000" />
+      <workItem from="1699123865267" duration="539000" />
+      <workItem from="1700139407003" duration="839000" />
+      <workItem from="1700320688485" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="COntacts and mobile version">
       <created>1662475278403</created>

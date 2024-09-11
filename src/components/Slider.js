@@ -9,28 +9,28 @@ import triangle3 from "../img/triangle-3.png"
 import triangle4 from "../img/triangle-4.png"
 
 const slides = [
-    {
-        id: 1,
-        content: ["Prototype", "Design", "Front-end"],
-        note: [],
-        image: robot2,
-        decoration: triangle1,
-        color: "#b666cb"
+    // {
+    //     id: 1,
+    //     content: ["Prototype", "Design", "Front-end"],
+    //     note: [],
+    //     image: robot2,
+    //     decoration: triangle1,
+    //     color: "#b666cb"
 
-    },
+    // },
     {
         id: 2,
-        content: ["Prototype"],
+        content: ["Prototyping"],
         note: ["Experience of creating UI for corporate sites, service portals, mobile apps", "Interactive mockups in Adobe XD, Figma"],
         image: robot3,
         decoration: triangle2,
-        color: "#67dce7"
+        color: "#79cfeb"
     },
     {
         id: 3,
         content: ["Design"],
         note: ["Experience in graphic design and photomanipulations", "Animated banners", "svg elements"],
-        image: robot4,
+        image: robot2,
         decoration: triangle3,
         color: "#897aff"
     },
@@ -46,7 +46,7 @@ const slides = [
 
 
 const Slider = () => {
-    const [frameColor, setFrameColor] = useState("#b666cb")
+    const [frameColor, setFrameColor] = useState("#79cfeb")
     document.documentElement.style.setProperty('--greyed', frameColor)
 
     const [currentSlide, setCurrentSlide] = useState(0);

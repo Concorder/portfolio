@@ -1,6 +1,7 @@
 import React from 'react';
 import Expfolder from "./components/Expfolder";
 const experience = [
+    {company:"Kinjo", years:"2023-Present",response:"Designer, Web Developer"},
     {company:"Adavice Media", years:"2019-2022",response:"Design TL, Web Developer"},
     {company:"Netpeak", years:"2016-2019",response:"Graphic Designer"},
     {company:"Whitestyle Design", years:"2017",response:"Web Designer"},
