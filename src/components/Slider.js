@@ -9,22 +9,20 @@ import triangle3 from "../img/triangle-3.png"
 import triangle4 from "../img/triangle-4.png"
 
 const slides = [
-    // {
-    //     id: 1,
-    //     content: ["Prototype", "Design", "Front-end"],
-    //     note: [],
-    //     image: robot2,
-    //     decoration: triangle1,
-    //     color: "#b666cb"
-
-    // },
     {
         id: 2,
         content: ["Prototyping"],
         note: ["Experience of creating UI for corporate sites, service portals, mobile apps", "Interactive mockups in Adobe XD, Figma"],
         image: robot3,
         decoration: triangle2,
-        color: "#79cfeb"
+        color: "#79cfeb",
+        grad: `radial-gradient(at 40% 20%, #2196f3 0px, transparent 50%),
+                radial-gradient(at 90% 0%, #00bcd4 0px, transparent 50%),
+                radial-gradient(at 0% 50%, #1976d2 0px, transparent 50%),
+                radial-gradient(at 80% 50%, #64b5f6 0px, transparent 50%),
+                radial-gradient(at 0% 100%, #18e5ff 0px, transparent 50%),
+                radial-gradient(at 80% 100%, #1565c0 0px, transparent 50%),
+                radial-gradient(at 0% 0%, #0d47a1 0px, transparent 50%)`
     },
     {
         id: 3,
@@ -32,7 +30,14 @@ const slides = [
         note: ["Experience in graphic design and photomanipulations", "Animated banners", "svg elements"],
         image: robot2,
         decoration: triangle3,
-        color: "#897aff"
+        color: "#897aff",
+        grad: `radial-gradient(at 40% 20%, #b666cb 0px, transparent 50%),
+                radial-gradient(at 90% 0%, #ff6ec7 0px, transparent 50%),
+                radial-gradient(at 0% 50%, #897aff 0px, transparent 50%),
+                radial-gradient(at 80% 50%, #ffb6f9 0px, transparent 50%),
+                radial-gradient(at 0% 100%, #e040fb 0px, transparent 50%),
+                radial-gradient(at 80% 100%, #ff8ae2 0px, transparent 50%),
+                radial-gradient(at 0% 0%, #c471ed 0px, transparent 50%)`
     },
     {
         id: 4,
@@ -40,25 +45,49 @@ const slides = [
         note: ["Creation of corporate sites", "Interactive landing pages", "service portals and mobile-first prelanding pages"],
         image: robot6,
         decoration: triangle4,
-        color: "#ee8074"
+        color: "#ee8074",
+        grad: `radial-gradient(at 40% 20%, #ffb347 0px, transparent 50%),
+                radial-gradient(at 90% 0%, #ffcc80 0px, transparent 50%),
+                radial-gradient(at 0% 50%, #ff8a65 0px, transparent 50%),
+                radial-gradient(at 80% 50%, #ffd1b3 0px, transparent 50%),
+                radial-gradient(at 0% 100%, #ffe0b2 0px, transparent 50%),
+                radial-gradient(at 80% 100%, #ffb347 0px, transparent 50%),
+                radial-gradient(at 0% 0%, #ffccbc 0px, transparent 50%)`
     },
 ];
 
 
 const Slider = () => {
     const [frameColor, setFrameColor] = useState("#79cfeb")
+    const [homeGrad, setHomeGrad] = useState(slides[0].grad)
     document.documentElement.style.setProperty('--greyed', frameColor)
+    useEffect(() => {
+        const homeGradElem = document.querySelector('.HomeGrad');
+        if (homeGradElem) {
+            homeGradElem.style.background = homeGrad;
+        }
+        return () => {
+            // Clean up: remove inline background when Slider unmounts
+            if (homeGradElem) {
+                homeGradElem.style.background = '';
+            }
+        };
+    }, [homeGrad]);
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const handlePrevSlide = () => {
-        setCurrentSlide((prevSlide) => prevSlide === 0 ? slides.length - 1 : prevSlide - 1);
-        setFrameColor(currentSlide === 0 ?  slides[slides.length-1].color : slides[currentSlide-1].color);
+        const newSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+        setCurrentSlide(newSlide);
+        setFrameColor(slides[newSlide].color);
+        setHomeGrad(slides[newSlide].grad);
     };
 
     const handleNextSlide = () => {
-        setCurrentSlide((prevSlide) => prevSlide === slides.length -1 ? 0 : prevSlide + 1);
-        setFrameColor(currentSlide === slides.length -1 ? slides[0].color : slides[currentSlide+1].color);
+        const newSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+        setCurrentSlide(newSlide);
+        setFrameColor(slides[newSlide].color);
+        setHomeGrad(slides[newSlide].grad);
     };
     const [cursorPosition, setCursorPosition] = useState({x:0,y:0})
 useEffect(()=>{
